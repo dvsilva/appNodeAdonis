@@ -19,5 +19,17 @@ npm i --save pg
 // start docker images
 // docker start $(docker ps -a -q -f status=exited)
 
-// test adonis db
+// adonis db migration
 adonis migration:run
+
+// criar controller
+adonis make:controller User
+
+// listar rotas
+adonis route:list
+
+// rollback na migration
+adonis migration:rollback
+
+// node v < 10 (ex: 8)
+npm install crypto
