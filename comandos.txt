@@ -1,0 +1,23 @@
+// installing adonis
+npm install -g @adonisjs/cli
+
+// criando novo projeto
+// --api-only - apropriado para api
+// --slim - mais simples
+adonis new gonode --api-only
+
+// start server (-dev ativa nodemom)
+adonis serve --dev
+
+// install eslint
+npm install -D eslint
+npx eslint --init
+
+// instalando postgres
+npm i --save pg
+
+// start docker images
+// docker start $(docker ps -a -q -f status=exited)
+
+// test adonis db
+adonis migration:run
