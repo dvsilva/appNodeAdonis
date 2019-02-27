@@ -33,3 +33,12 @@ adonis migration:rollback
 
 // node v < 10 (ex: 8)
 npm install crypto
+
+// create account https://mailtrap.io
+// envio de email
+adonis install @adonisjs/mail
+
+// install edge suport [edge template suport]
+
+// install moment
+npm install moment
