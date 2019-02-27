@@ -42,3 +42,6 @@ adonis install @adonisjs/mail
 
 // install moment
 npm install moment
+
+// create with migration and controller
+adonis make:model File -m -c
