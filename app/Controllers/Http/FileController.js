@@ -8,14 +8,7 @@ class FileController {
     const file = await File.findOrFail(params.id)
     return response.download(Helpers.tmpPath(`uploads/${file.file}`))
   }
-  /**
-   * Create/save a new file.
-   * POST files
-   *
-   * @param {object} ctx
-   * @param {Request} ctx.request
-   * @param {Response} ctx.response
-   */
+
   async store ({ request, response }) {
     try {
       if (!request.file('file')) return
