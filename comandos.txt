@@ -76,3 +76,6 @@ adonis kue:listen
 // Sentry
 // install raven
 npm install raven
+
+//
+adonis make:model UserAddress -m
