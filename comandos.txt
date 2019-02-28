@@ -45,3 +45,34 @@ npm install moment
 
 // create with migration and controller
 adonis make:model File -m -c
+
+// install validator
+adonis install @adonisjs/validator
+
+// create validator
+adonis make:validator User
+
+// tratar exceções
+adonis make:ehandler
+
+// internacionalization
+adonis install @adonisjs/antl
+
+// create hook
+adonis make:hook Task
+
+// install redis
+docker run --name redis -p 6379:6379 -d redis:alpine
+adonis install @adonisjs/redis
+
+// library for queue
+npm install adonis-kue
+
+// create job
+adonis make:job NewTaskMail
+// run queue
+adonis kue:listen
+
+// Sentry
+// install raven
+npm install raven
